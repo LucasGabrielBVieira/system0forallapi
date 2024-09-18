@@ -11,7 +11,7 @@ import java.util.Objects;
 public class UsuarioEntity {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
 	@Column(nullable = false)
@@ -39,7 +39,6 @@ public class UsuarioEntity {
 	}
 
 	public UsuarioEntity() {
-
 	}
 
 	public Long getId() {
